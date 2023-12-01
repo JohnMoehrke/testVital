@@ -1,6 +1,6 @@
 Profile:        Myvitals
-Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
-//Parent: Observation
+//Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
+Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns
 Title:          "VA PHR Vital-Signs"
 Description:    """
 A profile on the Observation resource for PHR exposing Vital-Signs using FHIR API.
@@ -53,8 +53,8 @@ Usage: #example
 
 
 Profile:        MyvitalsBP
-Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure
-//Parent: Observation
+//Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure
+Parent: http://hl7.org/fhir/StructureDefinition/bp
 Title:          "VA PHR Vital-Signs for Blood Pressure"
 Description:    """
 A profile on the Observation resource for Blood Pressure
@@ -101,15 +101,15 @@ Example from a mock
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.text = "BLOOD PRESSURE"
-* code.coding[+] = LOINC#85354-9 "Blood pressure panel with all children optional"
+* code.coding[BPCode] = LOINC#85354-9 "Blood pressure panel with all children optional"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-09-24T11:17:54Z
-* component[systolic].code = LOINC#8480-6 "Systolic blood pressure"
-* component[systolic].valueQuantity = 126 'mm[Hg]'
-* component[systolic].valueQuantity.unit = "mmHg"
-* component[diastolic].code = LOINC#8462-4 "Diastolic blood pressure"
-* component[diastolic].valueQuantity = 70 'mm[Hg]'
-* component[diastolic].valueQuantity.unit = "mmHg"
+* component[SystolicBP].code = LOINC#8480-6 "Systolic blood pressure"
+* component[SystolicBP].valueQuantity = 126 'mm[Hg]'
+* component[SystolicBP].valueQuantity.unit = "mmHg"
+* component[DiastolicBP].code = LOINC#8462-4 "Diastolic blood pressure"
+* component[DiastolicBP].valueQuantity = 70 'mm[Hg]'
+* component[DiastolicBP].valueQuantity.unit = "mmHg"
 * contained[+] = ex-location
 * performer[+].extension[site].valueReference = Reference(ex-location)
 * performer[=].display = "Location 2938"
