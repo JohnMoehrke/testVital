@@ -1,8 +1,11 @@
 
-
 # Status
 
-December 2023
+December 4, 2023
+
+Workaround is known. Grahame said "this is an error in the base r4 spec, and the only way to resolve it is for you to manually specify a minimum of 1 for .code.coding"  Note that the same is true of R4 and R4B. Current using-fhir-core-profiles branch does build clean.
+
+December 1, 2023
 
 Now that the IG publisher forces any observation that is a profiled vital sign to be compliant with the FHIR core profiles, I try to create a profile on BP and Weight but get errors.
 
