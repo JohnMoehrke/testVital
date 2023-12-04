@@ -5,10 +5,9 @@ Title:          "VA PHR Vital-Signs"
 Description:    """
 A profile on the Observation resource for PHR exposing Vital-Signs using FHIR API.
 """
+* code.coding 1.. // hack due to bug in fhir core BP profile
 * status = #final
-* category MS
 * code.text MS
-* code.coding MS
 * subject 1..1
 * effectiveDateTime 1..1
 * performer MS
@@ -59,12 +58,10 @@ Title:          "VA PHR Vital-Signs for Blood Pressure"
 Description:    """
 A profile on the Observation resource for Blood Pressure
 """
+* code.coding 1.. // hack due to bug in fhir core BP profile
+* component.code.coding 1.. // hack due to bug in fhir core BP profile
 * status = #final
 * code.text MS
-* code.coding MS
-* category MS
-* code.text MS
-* code.coding MS
 * subject 1..1
 * effectiveDateTime 1..1
 * performer MS
