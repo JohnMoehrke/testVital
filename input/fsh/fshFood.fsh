@@ -59,8 +59,6 @@ Description:    """
 A profile on the Observation resource for Blood Pressure
 """
 * code.coding 1.. // hack due to bug in fhir core BP profile
-* component.code.coding 1.. // hack due to bug in fhir core BP profile
-* status = #final
 // How to add more codes beyond FHIR core vitalsigns bp profile
 * code.text MS
 * code.coding contains loincCode1 1..1
@@ -71,6 +69,8 @@ A profile on the Observation resource for Blood Pressure
 * code.coding[loincCode1].code only code
 * code.coding[loincCode1].code = #55284-4 (exactly)
 
+* component.code.coding 1.. // hack due to bug in fhir core BP profile
+* status = #final
 * subject 1..1
 * effectiveDateTime 1..1
 * performer MS
@@ -107,6 +107,7 @@ Example from a mock
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.text = "BLOOD PRESSURE"
+* code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
 * code.coding[BPCode] = LOINC#85354-9 "Blood pressure panel with all children optional"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-09-24T11:17:54Z
