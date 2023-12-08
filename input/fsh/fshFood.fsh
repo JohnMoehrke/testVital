@@ -62,9 +62,17 @@ A profile on the Observation resource for Blood Pressure
 * status = #final
 * code.text MS
 * code.coding MS
+/* didn't work with us-core
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding contains loincCode1 1..1
+* code.coding[loincCode1] = LOINC#55284-4
+*/
+// given that us-core BP profile does not use slicing on .code just mandates 85354-9
+
 * category MS
-* code.text MS
-* code.coding MS
+
 * subject 1..1
 * effectiveDateTime 1..1
 * performer MS
@@ -101,6 +109,7 @@ Example from a mock
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.text = "BLOOD PRESSURE"
+* code.coding[+] = LOINC#55284-4
 * code.coding[+] = LOINC#85354-9 "Blood pressure panel with all children optional"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-09-24T11:17:54Z
