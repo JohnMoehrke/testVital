@@ -4,8 +4,4 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# don't care about this ucum warning
-UCUM Codes that contain human readable annotations like {Capsule} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
 
-# would like to add a slice on .code, but since us-core doesn't have slices I can't add them
-INFORMATION: Observation/ex-vitals-1: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)

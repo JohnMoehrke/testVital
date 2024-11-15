@@ -63,7 +63,7 @@ A profile on the Observation resource for Blood Pressure
 * code.text MS
 * code.coding MS
 /* didn't work with us-core
-* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding contains loincCode1 1..1
@@ -179,7 +179,8 @@ Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
 * recordedDate = "2001-03-22"
 
 Instance: ex-condition-us-core
-InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
+InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+//InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
 Usage: #example
 Title: "Condition: us-core"
 Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
