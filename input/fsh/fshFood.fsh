@@ -164,3 +164,30 @@ Usage: #example
 * address.state = "WI"
 * address.country = "USA"
 
+
+Instance: ex-condition-core
+InstanceOf: Condition
+Usage: #example
+Title: "Condition: FHIR Core"
+Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* code = http://hl7.org/fhir/sid/icd-9-cm#414.00
+* code.text = "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
+* subject = Reference(Patient/ex-patient)
+* recordedDate = "2001-03-22"
+
+Instance: ex-condition-us-core
+InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
+Usage: #example
+Title: "Condition: us-core"
+Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* code = http://hl7.org/fhir/sid/icd-9-cm#414.00
+* code.text = "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
+* subject = Reference(Patient/ex-patient)
+* recordedDate = "2001-03-22"
+
