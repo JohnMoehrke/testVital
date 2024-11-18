@@ -179,8 +179,8 @@ Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
 * recordedDate = "2001-03-22"
 
 Instance: ex-condition-us-core
-InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
-//InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
+//InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
 Usage: #example
 Title: "Condition: us-core"
 Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
