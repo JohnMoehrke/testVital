@@ -8,81 +8,81 @@ Usage: #example
 //// keep
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
-* entry[=].request.url = "SearchParameter?name=Resource-id"
+* entry[=].request.url = "SearchParameter?name=_id" // Resource-id"
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
-* entry[=].request.url = "SearchParameter?name=Resource-lastUpdated"
+* entry[=].request.url = "SearchParameter?name=_lastUpdated" // Resource-lastUpdated"
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
-* entry[=].request.url = "SearchParameter?name=clinical-identifier"
+* entry[=].request.url = "SearchParameter?name=identifier" // clinical-identifier"
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
-* entry[=].request.url = "SearchParameter?name=clinical-patient"
+* entry[=].request.url = "SearchParameter?name=patient" // clinical-patient"
 //// retire
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=DomainResource-text"
+* entry[=].request.url = "SearchParameter?name=_text" // DomainResource-text"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=Resource-content"
+* entry[=].request.url = "SearchParameter?name=_content" // Resource-content"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=Resource-profile"
+* entry[=].request.url = "SearchParameter?name=_profile" // Resource-profile"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=Resource-query"
+* entry[=].request.url = "SearchParameter?name=_query" // Resource-query"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=Resource-security"
+* entry[=].request.url = "SearchParameter?name=_security" // Resource-security"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=Resource-source"
+* entry[=].request.url = "SearchParameter?name=_source" // Resource-source"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=Resource-tag"
+* entry[=].request.url = "SearchParameter?name=_tag" // Resource-tag"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=clinical-code"
+* entry[=].request.url = "SearchParameter?name=code" // clinical-code"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=clinical-date"
+* entry[=].request.url = "SearchParameter?name=date" // clinical-date"
 // AllergyIntolerance parameters
 //// keep
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-clinical-status"
+* entry[=].request.url = "SearchParameter?name=clinical-status" // AllergyIntolerance-clinical-status
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-verification-status"
+* entry[=].request.url = "SearchParameter?name=verification-status" // AllergyIntolerance-verification-status"
 //// retire
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-asserter"
+* entry[=].request.url = "SearchParameter?name=asserter" // AllergyIntolerance-asserter"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-category"
+* entry[=].request.url = "SearchParameter?name=category" // AllergyIntolerance-category"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-criticality"
+* entry[=].request.url = "SearchParameter?name=criticality" // AllergyIntolerance-criticality"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-last-date"
+* entry[=].request.url = "SearchParameter?name=last-date" // AllergyIntolerance-last-date"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-manifestation"
+* entry[=].request.url = "SearchParameter?name=manifestation" // AllergyIntolerance-manifestation"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-onset"
+* entry[=].request.url = "SearchParameter?name=onset" // AllergyIntolerance-onset"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-recorder"
+* entry[=].request.url = "SearchParameter?name=recorder" // AllergyIntolerance-recorder"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-route"
+* entry[=].request.url = "SearchParameter?name=route" // AllergyIntolerance-route"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=AllergyIntolerance-severity"
-
+* entry[=].request.url = "SearchParameter?name=severity" // AllergyIntolerance-severity"
+/*
 // Condition
 //// keep
 * entry[+].request.method = #PATCH
@@ -360,7 +360,7 @@ Usage: #example
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
 * entry[=].request.url = "SearchParameter?name=individual-telecom"
-
+*/
 // more complex
 // clinical-type // need to keep for DocumentReference, but could turn off for all other base
 
