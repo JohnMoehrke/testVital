@@ -15,7 +15,7 @@
       "date" : "2019-11-01T09:29:23+11:00",
       "description" : "Search on the narrative of the resource",
       "code" : "_text",
-      "base" : ["DomainResource"],
+      "base" : ["Resource"],
       "type" : "string",
       "xpathUsage" : "normal"
     },
