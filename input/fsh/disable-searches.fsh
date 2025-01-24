@@ -1,4 +1,4 @@
-Instance: disable-searches
+Instance: patch-disable-searches
 InstanceOf: Bundle
 Title: "Disable Unnecessary searches"
 Description: "based on the searches that va.gov and backend need"

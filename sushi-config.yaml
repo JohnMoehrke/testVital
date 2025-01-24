@@ -40,6 +40,12 @@ dependencies:
 #  hl7.fhir.us.core: 6.0.x
 #  hl7.fhir.us.core: 7.0.0
   
+resources:
+  Bundle/disable-searches:
+    title: Disable Searches
+    description: "This Bundle resource demonstrates how to disable searches on a resource type."
+    exampleBoolean: true
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
