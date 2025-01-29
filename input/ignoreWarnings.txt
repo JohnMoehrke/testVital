@@ -4,4 +4,5 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-
+# disable searches
+Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'

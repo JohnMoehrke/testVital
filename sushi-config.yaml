@@ -42,8 +42,40 @@ dependencies:
   
 resources:
   Bundle/disable-searches:
-    title: Disable Searches
-    description: "This Bundle resource demonstrates how to disable searches on a resource type."
+    name: Disable Searches on ALL
+    description: "This Bundle resource demonstrates how to disable searches on all resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-core:
+    name: Disable Searches on Core
+    description: "This Bundle resource demonstrates how to disable searches on core resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-patient:
+    name: Disable Searches on Patient
+    description: "This Bundle resource demonstrates how to disable searches on the Patient resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-allergy:
+    name: Disable Searches on AllergyIntolerance
+    description: "This Bundle resource demonstrates how to disable searches on the AllergyIntolerance resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-condition:
+    name: Disable Searches on Condition
+    description: "This Bundle resource demonstrates how to disable searches on the condition resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-diagnostic:
+    name: Disable Searches on DiagnosticReport
+    description: "This Bundle resource demonstrates how to disable searches on the DiagnosticReport resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-documentreference:
+    name: Disable Searches on DocumentReference
+    description: "This Bundle resource demonstrates how to disable searches on the DocumentReference resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-immunization:
+    name: Disable Searches on Immunization
+    description: "This Bundle resource demonstrates how to disable searches on the Immunization resource type."
+    exampleBoolean: true
+  Bundle/disable-searches-observation:
+    name: Disable Searches on Observation
+    description: "This Bundle resource demonstrates how to disable searches on the Observation resource type."
     exampleBoolean: true
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
