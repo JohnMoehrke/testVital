@@ -77,6 +77,10 @@ resources:
     name: Disable Searches on Observation
     description: "This Bundle resource demonstrates how to disable searches on the Observation resource type."
     exampleBoolean: true
+  Bundle/disable-searches-observation-c:
+    name: Disable Searches on Observation Combo and Component
+    description: "This Bundle resource demonstrates how to disable searches on the Observation resource type combo and component elements."
+    exampleBoolean: true
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

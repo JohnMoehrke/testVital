@@ -21,6 +21,7 @@ We get the following set of Bundles, limiting the number of SearchParameters cha
 - [Bundle Disable Searches DocumentReference](Bundle-disable-searches-documentreference.html)
 - [Bundle Disable Searches Immunization](Bundle-disable-searches-immunization.html)
 - [Bundle Disable Searches Observation](Bundle-disable-searches-observation.html)
+- [Bundle Disable Searches Observation combo and component](Bundle-disable-searches-observation-c.html)
 
 Submit the Bundles to HAPI, then force a $reindex operation. You should see all the unnecessary indexes go away, and those that you need will stay.
 
