@@ -1,6 +1,9 @@
 
+# TestVital example IG
 
-# Status
+- ci-build - http://build.fhir.org/ig/JohnMoehrke/testVital/branches/main/index.html
+
+## Status
 
 December 4, 2023
 
@@ -19,7 +22,7 @@ https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/vital-signs.20prof
 # testVitals
 
 Main branch is using us-core and not showing any errors
-- ci-build - http://build.fhir.org/ig/JohnMoehrke/testMed/branches/main/index.html
+- ci-build - http://build.fhir.org/ig/JohnMoehrke/testVital/branches/main/index.html
 
 using-fhir-core-profiles is using fhir core profiles and getting errors on BP. Would also get them on height and weight. Does not throw errors on vitals.
 - ci-build - https://build.fhir.org/ig/JohnMoehrke/testVital/branches/using-fhir-core-profiles/index.html
