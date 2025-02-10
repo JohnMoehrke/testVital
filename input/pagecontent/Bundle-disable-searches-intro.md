@@ -6,7 +6,7 @@ Given that this is all we need are the following Resources and search parameters
 | Condition          | _lastUpdated, _id, identifier, patient, clinical-status                      |
 | Observation        | _lastUpdated, _id, identifier, patient, category, status                     |
 | Immunization       | _lastUpdated, _id, identifier, patient, status                               |
-| DocumentReference  | _lastUpdated, _id, identifier, patient, status, type                         |
+| DocumentReference  | _lastUpdated, _id, identifier, patient, status, category                         |
 | DiagnosticReport   | _lastUpdated, _id, identifier, patient, status, category                     |
 | Patient            | _lastUpdated, _id, identifier                                                |
 {: .grid}
