@@ -19,7 +19,6 @@ Submit the Bundle to HAPI, then force a $reindex operation. You should see all t
 2. Download the [search-parameters.json](https://hl7.org/fhir/R4/search-parameters.json)
 3. Remove the above entries by "name", as we want to keep these index
    1. Note that some of the above are generic such as `_lastUpdated`, `_id`, `identifier`, and `patient`
-   2. Note that the need for `DocumentReference.type` means that you need the generic `clinical-type` for everything
 4. Remove the resources NOT mentioned above, as we don't need those as we will never populate those resources
 5. for each entry kept, remove the `extension`,  `publisher`, `contact`, and `description`. These are not needed and can cause conflicts given that this is not the same as published by HL7, and the descriptions contain narrative with links into FHIR core but the descriptions are not helpful.
 6. for each entry add request, POST to SearchParameter

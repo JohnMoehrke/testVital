@@ -45,6 +45,9 @@ Usage: #example
 * entry[=].request.url = "SearchParameter?name=code" // clinical-code"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
+* entry[=].request.url = "SearchParameter?name=type" // clinical-type"
+* entry[+].request.method = #PATCH
+* entry[=].resource = retire
 * entry[=].request.url = "SearchParameter?name=date" // clinical-date"
 // AllergyIntolerance parameters
 //// keep
@@ -186,6 +189,9 @@ Usage: #example
 * entry[+].request.method = #PATCH
 * entry[=].resource = activate
 * entry[=].request.url = "SearchParameter?name=DocumentReference-subject"
+* entry[+].request.method = #PATCH
+* entry[=].resource = activate
+* entry[=].request.url = "SearchParameter?name=DocumentReference-category"
 //// retire
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
@@ -193,9 +199,6 @@ Usage: #example
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
 * entry[=].request.url = "SearchParameter?name=DocumentReference-author"
-* entry[+].request.method = #PATCH
-* entry[=].resource = retire
-* entry[=].request.url = "SearchParameter?name=DocumentReference-category"
 * entry[+].request.method = #PATCH
 * entry[=].resource = retire
 * entry[=].request.url = "SearchParameter?name=DocumentReference-contenttype"
@@ -361,8 +364,6 @@ Usage: #example
 * entry[=].resource = retire
 * entry[=].request.url = "SearchParameter?name=individual-telecom"
 */
-// more complex
-// clinical-type // need to keep for DocumentReference, but could turn off for all other base
 
 Instance: activate
 InstanceOf: Parameters

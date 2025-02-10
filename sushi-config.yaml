@@ -45,6 +45,10 @@ resources:
     name: Disable Searches on ALL
     description: "This Bundle resource demonstrates how to disable searches on all resource type."
     exampleBoolean: true
+  Bundle/disable-searches-min:
+    name: Disable minimal Searches on ALL
+    description: "This Bundle resource demonstrates how to disable searches on all resource type, but only the elements we populate but never search on."
+    exampleBoolean: true
   Bundle/disable-searches-core:
     name: Disable Searches on Core
     description: "This Bundle resource demonstrates how to disable searches on core resource type."

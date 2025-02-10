@@ -11,7 +11,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-based-on",
                 "version": "4.0.1",
                 "name": "based-on",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -38,32 +38,6 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-category",
-            "resource": {
-                "resourceType": "SearchParameter",
-                "id": "Observation-category",
-                "url": "http://hl7.org/fhir/SearchParameter/Observation-category",
-                "version": "4.0.1",
-                "name": "category",
-                "status": "draft",
-                "experimental": false,
-                "date": "2019-11-01T09:29:23+11:00",
-                "description": "none.",
-                "code": "category",
-                "base": [
-                    "Observation"
-                ],
-                "type": "token",
-                "expression": "Observation.category",
-                "xpath": "f:Observation/f:category",
-                "xpathUsage": "normal"
-            },
-            "request": {
-                "method": "POST",
-                "url": "SearchParameter"
-            }
-        },
-        {
             "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason",
             "resource": {
                 "resourceType": "SearchParameter",
@@ -71,7 +45,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason",
                 "version": "4.0.1",
                 "name": "data-absent-reason",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -97,7 +71,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-derived-from",
                 "version": "4.0.1",
                 "name": "derived-from",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -131,7 +105,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-device",
                 "version": "4.0.1",
                 "name": "device",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -161,7 +135,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-focus",
                 "version": "4.0.1",
                 "name": "focus",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -334,7 +308,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-has-member",
                 "version": "4.0.1",
                 "name": "has-member",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -365,7 +339,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-method",
                 "version": "4.0.1",
                 "name": "method",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -391,7 +365,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-part-of",
                 "version": "4.0.1",
                 "name": "part-of",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -425,7 +399,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-performer",
                 "version": "4.0.1",
                 "name": "performer",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -459,7 +433,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-specimen",
                 "version": "4.0.1",
                 "name": "specimen",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -481,64 +455,6 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-status",
-            "resource": {
-                "resourceType": "SearchParameter",
-                "id": "Observation-status",
-                "url": "http://hl7.org/fhir/SearchParameter/Observation-status",
-                "version": "4.0.1",
-                "name": "status",
-                "status": "draft",
-                "experimental": false,
-                "date": "2019-11-01T09:29:23+11:00",
-                "description": "none.",
-                "code": "status",
-                "base": [
-                    "Observation"
-                ],
-                "type": "token",
-                "expression": "Observation.status",
-                "xpath": "f:Observation/f:status",
-                "xpathUsage": "normal"
-            },
-            "request": {
-                "method": "POST",
-                "url": "SearchParameter"
-            }
-        },
-        {
-            "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-subject",
-            "resource": {
-                "resourceType": "SearchParameter",
-                "id": "Observation-subject",
-                "url": "http://hl7.org/fhir/SearchParameter/Observation-subject",
-                "version": "4.0.1",
-                "name": "subject",
-                "status": "draft",
-                "experimental": false,
-                "date": "2019-11-01T09:29:23+11:00",
-                "description": "none.",
-                "code": "subject",
-                "base": [
-                    "Observation"
-                ],
-                "type": "reference",
-                "expression": "Observation.subject",
-                "xpath": "f:Observation/f:subject",
-                "xpathUsage": "normal",
-                "target": [
-                    "Group",
-                    "Device",
-                    "Patient",
-                    "Location"
-                ]
-            },
-            "request": {
-                "method": "POST",
-                "url": "SearchParameter"
-            }
-        },
-        {
             "fullUrl": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
             "resource": {
                 "resourceType": "SearchParameter",
@@ -546,7 +462,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
                 "version": "4.0.1",
                 "name": "value-concept",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -572,7 +488,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-value-date",
                 "version": "4.0.1",
                 "name": "value-date",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -609,7 +525,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
                 "version": "4.0.1",
                 "name": "value-quantity",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -646,7 +562,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-value-string",
                 "version": "4.0.1",
                 "name": "value-string",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -672,7 +588,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
                 "version": "4.0.1",
                 "name": "code-value-concept",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -708,7 +624,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-date",
                 "version": "4.0.1",
                 "name": "code-value-date",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -744,7 +660,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity",
                 "version": "4.0.1",
                 "name": "code-value-quantity",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",
@@ -780,7 +696,7 @@
                 "url": "http://hl7.org/fhir/SearchParameter/Observation-code-value-string",
                 "version": "4.0.1",
                 "name": "code-value-string",
-                "status": "draft",
+                "status": "retired",
                 "experimental": false,
                 "date": "2019-11-01T09:29:23+11:00",
                 "description": "none.",

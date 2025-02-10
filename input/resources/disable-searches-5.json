@@ -69,32 +69,6 @@
             }
         },
         {
-            "fullUrl": "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
-            "resource": {
-                "resourceType": "SearchParameter",
-                "id": "DocumentReference-category",
-                "url": "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
-                "version": "4.0.1",
-                "name": "category",
-                "status": "retired",
-                "experimental": false,
-                "date": "2019-11-01T09:29:23+11:00",
-                "description": "none",
-                "code": "category",
-                "base": [
-                    "DocumentReference"
-                ],
-                "type": "token",
-                "expression": "DocumentReference.category",
-                "xpath": "f:DocumentReference/f:category",
-                "xpathUsage": "normal"
-            },
-            "request": {
-                "method": "POST",
-                "url": "SearchParameter"
-            }
-        },
-        {
             "fullUrl": "http://hl7.org/fhir/SearchParameter/DocumentReference-contenttype",
             "resource": {
                 "resourceType": "SearchParameter",
