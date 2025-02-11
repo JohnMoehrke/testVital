@@ -89,6 +89,10 @@ resources:
     name: Enable Searches on ALL
     description: "This Bundle resource demonstrates how to disable the search parameters we do use."
     exampleBoolean: true
+  Bundle/not-disabled:
+    name: Not Disabled Searches
+    description: "This Bundle are the search parameters we do not need, but will not get disabled if you try. They will indicate they are disabled, but they are not actually disabled."
+    exampleBoolean: true
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

@@ -13,6 +13,9 @@ Given that this is all we need are the following Resources and search parameters
 
 Submit the Bundle to HAPI, then force a $reindex operation. You should see all the unnecessary indexes go away, and those that you need will stay.
 
+Unfortunately when you submit the SearchParameter updates, HAPI fires off many threads (one for each SearchParameter) that reindexes. This is true even on most current HAPI (7.6). Would be better to disable reindexing, send the Bundle, then reindex once. `setMarkResourcesForReindexingUponSearchParameterChange()` can be used to turn off reindexing on each SearchParameter. This seems to have been released in HAPI 7.2.2 or later. So not helpful to 6.10.
+
+
 #### How this was built
 
 1. Start with the [FHIR R4 Search Parameter Registry](https://hl7.org/fhir/R4/searchparameter-registry.html)
