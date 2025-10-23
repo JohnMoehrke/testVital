@@ -192,3 +192,16 @@ Description: "COR ATHEROSCL UNSP TYP-VES (ICD-9-CM 414.00)"
 * subject = Reference(Patient/ex-patient)
 * recordedDate = "2001-03-22"
 
+ValueSet: ExampleBehavioralHealthMedicationCodes
+Title: "ValueSet - Example Behavioral Health Medication Codes"
+Description: """
+Example set of codes representing behavioral health medications requiring special privacy protections.
+
+Specifically sct#373265006 is NOT  'Fluoxetine (product)' 
+
+Yet it will be kept without warning in the ValueSet definition, while the ValueSet expansion includes the proper display of `Analgesic (substance)`.
+"""
+* ^experimental = false
+* http://www.nlm.nih.gov/research/umls/rxnorm#315952  "Fluoxetine 20 MG Oral Capsule" // 10/23/2025 - in leap-sls code for BH
+* http://snomed.info/sct#372767007  "Fluoxetine (substance)" // 10/23/2025 - in leap-sls code for BH 
+* http://snomed.info/sct#373265006  "Fluoxetine (product)" 
