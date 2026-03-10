@@ -1,3 +1,4 @@
+
 Profile:        Myvitals
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
 //Parent: Observation
@@ -43,13 +44,26 @@ Usage: #example
 * contained[+] = ex-location
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8302-2 "Body height"
+* code = http://loinc.org#8302-2 "Body height"
 * code.text = "HEIGHT"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = "2004-09-24T10:32:00Z"
 * performer[+].extension[site].valueReference = Reference(ex-location)
 * performer[=].display = "Location 2938"
 * valueQuantity = 71 '[in_i]' "in_i"
+
+Instance: ex-cost
+InstanceOf: Observation
+Title: "Cost"
+Description:  "some cost in USD"
+Usage: #example
+* status = #final
+* code.text = "COST"
+* subject = Reference(Patient/ex-patient)
+* effectiveDateTime = "2004-09-24T10:32:00Z"
+* performer.display = "Clerk 4217"
+* valueQuantity.value = 71
+* valueQuantity = urn:iso:std:iso:4217#USD
 
 
 Profile:        MyvitalsBP
@@ -66,8 +80,8 @@ A profile on the Observation resource for Blood Pressure
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding contains loincCode1 1..1
-* code.coding[loincCode1] = LOINC#55284-4
+* code.coding contains http://loinc.orgCode1 1..1
+* code.coding[http://loinc.orgCode1] = http://loinc.org#55284-4
 */
 // given that us-core BP profile does not use slicing on .code just mandates 85354-9
 
@@ -109,14 +123,14 @@ Example from a mock
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.text = "BLOOD PRESSURE"
-* code.coding[+] = LOINC#55284-4
-* code.coding[+] = LOINC#85354-9 "Blood pressure panel with all children optional"
+* code.coding[+] = http://loinc.org#55284-4
+* code.coding[+] = http://loinc.org#85354-9 "Blood pressure panel with all children optional"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-09-24T11:17:54Z
-* component[systolic].code = LOINC#8480-6 "Systolic blood pressure"
+* component[systolic].code = http://loinc.org#8480-6 "Systolic blood pressure"
 * component[systolic].valueQuantity = 126 'mm[Hg]'
 * component[systolic].valueQuantity.unit = "mmHg"
-* component[diastolic].code = LOINC#8462-4 "Diastolic blood pressure"
+* component[diastolic].code = http://loinc.org#8462-4 "Diastolic blood pressure"
 * component[diastolic].valueQuantity = 70 'mm[Hg]'
 * component[diastolic].valueQuantity.unit = "mmHg"
 * contained[+] = ex-location

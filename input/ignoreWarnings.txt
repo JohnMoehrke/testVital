@@ -15,3 +15,6 @@ Constraint failed: spd-0: 'Name should be usable as an identifier for the module
 The left side is inherently a collection, and so the expression 'Observation.component.value as CodeableConcept' may fail or return false if there is more than one item in the content being evaluated
 The left side is inherently a collection, and so the expression 'Observation.component.value as Quantity' may fail or return false if there is more than one item in the content being evaluated
 The left side is inherently a collection, and so the expression 'Observation.component.value as SampledData' may fail or return false if there is more than one item in the content being evaluated
+
+# inherited from core 
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
