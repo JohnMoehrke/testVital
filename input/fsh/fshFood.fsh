@@ -219,3 +219,15 @@ Yet it will be kept without warning in the ValueSet definition, while the ValueS
 * http://www.nlm.nih.gov/research/umls/rxnorm#315952  "Fluoxetine 20 MG Oral Capsule" // 10/23/2025 - in leap-sls code for BH
 * http://snomed.info/sct#372767007  "Fluoxetine (substance)" // 10/23/2025 - in leap-sls code for BH 
 * http://snomed.info/sct#373265006  "Fluoxetine (product)" 
+
+Instance: ex-converage
+InstanceOf: Coverage
+Title: "Coverage Example"
+Description: "Example coverage for completeness sake. No actual use of this resource other than an example target"
+Usage: #example
+* beneficiary = Reference(Patient/ex-patient)
+* status = #active
+* payor.display = "United Healthcare"
+* costToBeneficiary.valueQuantity.value = 20
+* costToBeneficiary.valueQuantity.unit = "USD"
+* costToBeneficiary.valueQuantity = urn:iso:std:iso:4217#USD
